@@ -6,7 +6,9 @@ const Footer = () => {
   
   <div class="card-body  bg-slate-900 text-white  ">
     <h5 class="card-title p-10">@@@@Copyright Sports Shop@@@@ </h5>
-   
+     
+
+
      
   </div>
   
