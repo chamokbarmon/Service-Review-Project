@@ -2,13 +2,11 @@ import React from 'react';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import { Link } from 'react-router-dom';
-import './ServiceCard.css';
 
-const ServiceCard = ({ser}) => {
+const ServicesCard = ({ser}) => {
     const {picture,name,description} = ser ;
-    console.log(ser)
     return (
-       <div className='w-52 '>
+        <div className='w-52 '>
          <Card style={{ width: '18rem' }}>
           <img className='max-h-40 p-2' src={picture} alt="" />
         <Card.Body>
@@ -19,11 +17,11 @@ const ServiceCard = ({ser}) => {
 
             }
           </Card.Text>
-           <Link to='/services'><Button variant="primary">See All</Button></Link>
+           <Link to=''><Button variant="primary">Details</Button></Link>
         </Card.Body>
       </Card>
        </div>
     );
 };
 
-export default ServiceCard;
+export default ServicesCard;

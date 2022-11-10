@@ -6,7 +6,7 @@ import { Col, Container, Row } from 'react-bootstrap';
 const Service = () => {
     const [services,SetServices]= useState([])
     useEffect(()=>{
-        fetch(`http://localhost:5000/services`)
+        fetch(`https://service-assignment-server.vercel.app/services`)
         .then(res=>res.json())
         .then(data=>SetServices(data))
     },[])

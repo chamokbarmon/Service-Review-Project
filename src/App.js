@@ -4,6 +4,8 @@ import Blog from './Componend/Blog/Blog';
 import Home from './Componend/Home/Home';
 import Login from './Componend/Login/Login';
 import Main from './Componend/Main/Main';
+import Services from './Componend/Services/Services';
+
 
 function App() {
   const router = createBrowserRouter([
@@ -24,6 +26,10 @@ function App() {
         {
           path:'/blog',
           element :<Blog></Blog>
+        },
+        {
+          path:'/services',
+          element:<Services></Services>
         }
        
       ]
