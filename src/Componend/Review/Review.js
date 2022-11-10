@@ -16,7 +16,7 @@ const Review = () => {
             
     <PhotoProvider className='cursor'>
       <PhotoView src={picture}>
-        <img className='h-40' src={picture} alt="" />
+        <img className='h-40 w-40' src={picture} alt="" />
       </PhotoView>
     </PhotoProvider>
             </figure>
