@@ -5,6 +5,7 @@ import Home from './Componend/Home/Home';
 import Login from './Componend/Login/Login';
 import Main from './Componend/Main/Main';
 import Services from './Componend/Services/Services';
+import Signin from './Componend/SignIn/Signin';
 
 
 function App() {
@@ -30,6 +31,10 @@ function App() {
         {
           path:'/services',
           element:<Services></Services>
+        },
+        {
+          path:'/signin',
+          element:<Signin></Signin>
         }
        
       ]

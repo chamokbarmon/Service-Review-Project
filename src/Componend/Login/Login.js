@@ -1,11 +1,12 @@
 import { useContext } from 'react';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
+import { Link } from 'react-router-dom';
 import { AuthContext } from '../../Context/AuthProvider/AuthProvider';
 
 
 const Login = () => {
-  const {login} = useContext(AuthContext)
+  const {login, handelgooglesignin} = useContext(AuthContext)
 
   const handelLogin = event =>{
     event.preventDefault();
@@ -15,6 +16,7 @@ const Login = () => {
     console.log(email,password);
 
     login(email,password)
+    handelgooglesignin(email,password)
     .then(result=>{
       const user = result.user;
       console.log(user);
@@ -43,6 +45,7 @@ const Login = () => {
         <Button variant="primary" className='mt-2 w-100' type="submit">
           Google
         </Button>
+        <p className='center'>New  account <Link to='/signin'>Signin</Link> </p>
       </Form>
         </div>
     );
