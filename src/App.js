@@ -5,6 +5,7 @@ import Details from './Componend/Details/Details';
 import Home from './Componend/Home/Home';
 import Login from './Componend/Login/Login';
 import Main from './Componend/Main/Main';
+import Review from './Componend/Review/Review';
 import Services from './Componend/Services/Services';
 import Signin from './Componend/SignIn/Signin';
 
@@ -40,7 +41,13 @@ function App() {
         {
           path:'/services/:id',
           element:<Details></Details>,
-          loader:({params})=> fetch(`http://localhost:5000/services/${params.id}`)
+          loader:({params})=> fetch(`https://service-assignment-server.vercel.app/services/${params.id}`)
+        },
+        {
+          path:'/services/:id',
+          element:<Review></Review>,
+          loader:({params})=> fetch(`https://service-assignment-server.vercel.app/services/${params.id}`)
+
         }
        
       ]
