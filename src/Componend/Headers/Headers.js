@@ -1,4 +1,3 @@
-import { Button } from 'bootstrap';
 import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
@@ -10,13 +9,13 @@ const Headers = () => {
     return (
         <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
         <Container>
-          <Navbar.Brand href="#home" ><h3>Sports Shops</h3></Navbar.Brand>
+          <Navbar.Brand href="#home" ><h3><Link to='/'>Sports Shops</Link> </h3></Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link to='/review'>My Reviews  </Nav.Link>
-              <Nav.Link to='/services'>Add Service </Nav.Link>
-              <Nav.Link to='/blog'>Blog </Nav.Link>
+              <Nav.Link> <Link to='/review'>My Reviews </Link> </Nav.Link>
+              <Nav.Link ><Link to='/services'>Add Service</Link> </Nav.Link>
+              <Nav.Link ><Link to='/blog'>Blog</Link> </Nav.Link>
               
             </Nav>
             <Nav>

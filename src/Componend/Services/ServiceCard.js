@@ -10,7 +10,7 @@ const ServiceCard = ({ser}) => {
     return (
        <div className='w-52 '>
          <Card style={{ width: '18rem' }}>
-          <img className='max-h-40' src={picture} alt="" />
+          <img className='max-h-40 p-2' src={picture} alt="" />
         <Card.Body>
           <Card.Title>{name}</Card.Title>
           <Card.Text className='text-truncate'>
