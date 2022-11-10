@@ -46,7 +46,7 @@ function App() {
         },
         {
           path:'/review/:id',
-          element:<Review></Review>,
+          element:
           loader:({params})=> fetch(`https://service-assignment-server.vercel.app/review/${params.id}`)
 
         }
