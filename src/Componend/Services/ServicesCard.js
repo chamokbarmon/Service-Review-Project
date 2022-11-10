@@ -4,7 +4,7 @@ import Card from 'react-bootstrap/Card';
 import { Link } from 'react-router-dom';
 
 const ServicesCard = ({ser}) => {
-    const {picture,name,description} = ser ;
+    const {picture,name,description,_id} = ser ;
     return (
         <div className='w-52 '>
          <Card style={{ width: '18rem' }}>
@@ -17,7 +17,7 @@ const ServicesCard = ({ser}) => {
 
             }
           </Card.Text>
-           <Link to=''><Button variant="primary">Details</Button></Link>
+           <Link to={`/services/${_id}`}><Button variant="primary">Details</Button></Link>
         </Card.Body>
       </Card>
        </div>

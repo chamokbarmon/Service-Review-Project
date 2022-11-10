@@ -2,9 +2,9 @@ import React from 'react';
 
 const Footer = () => {
     return (
-        <div class="card text-center mt-5 ">
+       
   
-  <div class="card-body  bg-slate-900 text-white  ">
+  <div class="card-body  bg-slate-900 text-white text-center mt-5 ">
     <h5 class="card-title p-10">@@@@Copyright Sports Shop@@@@ </h5>
      
 
@@ -12,7 +12,7 @@ const Footer = () => {
      
   </div>
   
-      </div>
+      
 
     );
 };

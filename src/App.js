@@ -1,6 +1,7 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './App.css';
 import Blog from './Componend/Blog/Blog';
+import Details from './Componend/Details/Details';
 import Home from './Componend/Home/Home';
 import Login from './Componend/Login/Login';
 import Main from './Componend/Main/Main';
@@ -35,6 +36,11 @@ function App() {
         {
           path:'/signin',
           element:<Signin></Signin>
+        },
+        {
+          path:'/services/:id',
+          element:<Details></Details>,
+          loader:({params})=> fetch(`http://localhost:5000/services/${params.id}`)
         }
        
       ]
