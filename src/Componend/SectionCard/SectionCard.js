@@ -7,7 +7,7 @@ const SectionCard = () => {
         <Card className="bg-dark text-white">
       <Card.Img src={img} />
       <Card.ImgOverlay>
-        <Card.Title>Card title</Card.Title>
+        <Card.Title>Play Football </Card.Title>
         <Card.Text>
         Football (also known as association football or soccer) is a team sport played between two teams of 11 players each. It is widely considered to be the most popular sport in the world. A ball game, it is played on a rectangular grass field, or occasionally an artificial turf, with a goal at each end of the field. The object of the game is to score by manoeuvring the ball into the opposing goal; only the goalkeepers may use their hands or arms to propel the ball in general play. The team that scores the most goals by the end of the match wins. If the score is tied at the end of the game, either a draw is declared or the game goes into extended time, depending on the format of the competition.
 

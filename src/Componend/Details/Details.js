@@ -10,7 +10,7 @@ const Details = () => {
              
              <br /> <br />
               
-            <Button className='btn btn-primary'><Link to={`/services/${_id}`} className='text-white'>Review Section</Link></Button>
+            <Button className='btn btn-primary'><Link to={`/review/${_id}`} className='text-white'>Review Section</Link></Button>
         </div>
     );
 };

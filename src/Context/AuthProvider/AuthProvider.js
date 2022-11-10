@@ -8,6 +8,7 @@ const auth = getAuth(app);
 
 const AuthProvider = ({children}) => {
     const [user ,setUser] = useState(null)
+    const [loading,setLoading] =useState(true)
     const provider = new GoogleAuthProvider();
 
     const  handelgooglesignin = ()=>{
@@ -39,6 +40,7 @@ const AuthProvider = ({children}) => {
     },[])
     const AuthInfo ={
         user ,
+        loading,
         createuser,
         login,
         handelgooglesignin

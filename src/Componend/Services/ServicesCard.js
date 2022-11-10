@@ -2,13 +2,22 @@ import React from 'react';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import { Link } from 'react-router-dom';
+import { PhotoProvider, PhotoView } from 'react-photo-view';
+import 'react-photo-view/dist/react-photo-view.css';
 
 const ServicesCard = ({ser}) => {
     const {picture,name,description,_id} = ser ;
     return (
         <div className='w-52 '>
          <Card style={{ width: '18rem' }}>
-          <img className='max-h-40 p-2' src={picture} alt="" />
+         <figure>
+            
+    <PhotoProvider className='cursor'>
+      <PhotoView src={picture}>
+        <img className='h-40' src={picture} alt="" />
+      </PhotoView>
+    </PhotoProvider>
+            </figure>
         <Card.Body>
           <Card.Title>{name}</Card.Title>
           <Card.Text className='text-truncate'>
