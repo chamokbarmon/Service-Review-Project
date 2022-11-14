@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import ServiceCard from './ServiceCard';
 import './Service.css';
-import { Col, Container, Row } from 'react-bootstrap';
+import { Button, Col, Container, Row } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 const Service = () => {
     const [services,SetServices]= useState([])
@@ -23,6 +24,7 @@ const Service = () => {
                       services.slice(0,3).map(ser => <ServiceCard key={ser._id} ser={ser}></ServiceCard>)
                      }
                       </div>
+                      <Button variant="primary"><Link to='/services' className='text-white mt-44'>See All </Link> </Button>
                     </Col>
                 </Row>
             </Container>

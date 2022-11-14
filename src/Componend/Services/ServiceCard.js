@@ -7,10 +7,11 @@ import { PhotoProvider, PhotoView } from 'react-photo-view';
 import 'react-photo-view/dist/react-photo-view.css';
 
 const ServiceCard = ({ser}) => {
-    const {picture,name,description} = ser ;
+    const {picture,name,description,_id} = ser ;
     console.log(ser)
     return (
-       <div className='w-52 '>
+      <div>
+         <div className='w-52 '>
          <Card style={{ width: '18rem' }}>
          <figure>
             
@@ -28,10 +29,14 @@ const ServiceCard = ({ser}) => {
 
             }
           </Card.Text>
-           <Link to='/services'><Button variant="primary">See All</Button></Link>
+           <Link to={`/review/${_id}`}><Button className='me-3' variant="primary">Details</Button></Link>
+
         </Card.Body>
       </Card>
+      
        </div>
+       
+      </div>
     );
 };
 

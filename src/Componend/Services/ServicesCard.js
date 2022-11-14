@@ -26,7 +26,7 @@ const ServicesCard = ({ser}) => {
 
             }
           </Card.Text>
-           <Link to={`/services/${_id}`}><Button variant="primary">Details</Button></Link>
+           <Link to={`/review/${_id}`}><Button variant="primary">Details</Button></Link>
         </Card.Body>
       </Card>
        </div>

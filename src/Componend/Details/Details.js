@@ -8,9 +8,6 @@ const Details = () => {
         <div className='bg-blue-900 text-white p-5'>
             {description}
              
-             <br /> <br />
-              
-            <Button className='btn btn-primary'><Link to={`/review/${_id}`} className='text-white'>Review Section</Link></Button>
         </div>
     );
 };
