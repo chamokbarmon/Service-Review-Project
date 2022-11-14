@@ -1,5 +1,6 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './App.css';
+import AllReview from './Componend/AllReview/AllReview';
 import Blog from './Componend/Blog/Blog';
 import Details from './Componend/Details/Details';
 import Headers from './Componend/Headers/Headers';
@@ -56,6 +57,10 @@ function App() {
           element:<Review></Review>,
           loader:({params})=> fetch(`https://service-assignment-server.vercel.app/review/${params.id}`)
 
+        },
+        {
+          path:'/allreview',
+          element:<AllReview></AllReview>
         }
        
       ]
