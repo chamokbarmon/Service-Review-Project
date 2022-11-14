@@ -2,6 +2,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './App.css';
 import Blog from './Componend/Blog/Blog';
 import Details from './Componend/Details/Details';
+import Headers from './Componend/Headers/Headers';
 import Home from './Componend/Home/Home';
 import Login from './Componend/Login/Login';
 import Main from './Componend/Main/Main';
@@ -40,9 +41,15 @@ function App() {
           element:<Signin></Signin>
         },
         {
+             path:'/header',
+             element:<Headers></Headers>,
+             loader:({params})=> fetch(`https://service-assignment-server.vercel.app/services/${params.id}`)
+        },
+        {
           path:'/services/:id',
           element:<Details></Details>,
           loader:({params})=> fetch(`https://service-assignment-server.vercel.app/services/${params.id}`)
+         
         },
         {
           path:'/review/:id',

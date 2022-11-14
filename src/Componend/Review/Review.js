@@ -3,6 +3,7 @@ import { useLoaderData } from 'react-router-dom';
 import Card from 'react-bootstrap/Card';
 import { PhotoProvider, PhotoView } from 'react-photo-view';
 import 'react-photo-view/dist/react-photo-view.css';
+import Details from '../Details/Details';
 
 const Review = () => {
     const review = useLoaderData();
@@ -10,8 +11,8 @@ const Review = () => {
     console.log(review);
 
     return (
-        <div className='w-52 me-auto align-items-center'>
-        <Card style={{ width: '60rem' }}>
+        <div >
+        <Card className='w-52 me-auto align-items-center' style={{ width: '60rem' }}>
         <figure>
             
     <PhotoProvider className='cursor'>
@@ -33,6 +34,12 @@ const Review = () => {
           <h3>Price :{price}</h3>
        </Card.Body>
      </Card>
+     <br /> <br />
+     <div className='text-middle w-75 bg-red-400' >
+     <h1 >Review Section</h1><br /><br />
+     <Details></Details>
+     </div>
+    
       </div>
     );
 };
