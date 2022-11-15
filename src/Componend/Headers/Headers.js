@@ -27,7 +27,7 @@ const Headers = () => {
               <Nav.Link ><Link to='/login'>login</Link> </Nav.Link>
               
             </Nav>
-            <div className="navbar-end">
+            <div className="navbar-end d-flex">
           <span className="mr-2 bg-slate-100 d-flex">{user?.displayName}</span>
 
           <div>
