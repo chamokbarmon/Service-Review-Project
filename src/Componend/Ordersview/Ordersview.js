@@ -2,29 +2,34 @@ import React from 'react';
 import Table from 'react-bootstrap/Table';
 
 const Ordersview = ({or}) => {
-    const {phone} = or;
+    const {phone,customer,
+      email,price,message} = or;
     console.log(or)
     return (
         <div>
-            {/* <Table striped bordered hover>
+            <Table striped bordered hover>
       <thead>
         <tr>
-          <th>#</th>
+      
           <th>First Name</th>
-          <th>Last Name</th>
-          <th>Username</th>
+          <th>Price</th>
+          <th>Message</th>
+          <th>Phone </th>
+          <th>Email </th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td>1</td>
-          <td>Mark</td>
+      
+          <td>{customer}</td>
+          <td>{price}</td>
+          <td>{message}</td>
           <td>{phone}</td>
-          <td>@mdo</td>
+          <td>{email}</td>
         </tr>
        
       </tbody>
-    </Table> */}
+    </Table>
         </div>
     );
 };
