@@ -46,13 +46,13 @@ const Details = () => {
     return (
         <form action="" onSubmit={handelfrom}>
         <div className='grid grid-cols-1 lg:grid-cols-2 gap-2 '>
-           <input  name='firstname' type="text" placeholder='Enter name :' className='bg-red-300 text-black border'  />
+           <input  name='firstname' type="text" placeholder='Enter name :' className='bg-red-300 text-white border'  />
            <input  name='lastname' type="text" placeholder='Enter lastname :' className='bg-red-300 text-black' />
            <input  name='phone' type="number" placeholder='Enter phone :' className='bg-red-300 text-black' />
            <input  name='email' type="email" placeholder='Enter Email :' defaultValue={user?.email} className='bg-red-300 text-black' readOnly />
           
         </div>
-        <textarea name="message" id="" cols="30" rows="10"></textarea> <br /> 
+        <textarea name="message" id="" cols="130" rows="10" ></textarea> <br /> 
        <Button> <input type="submit" className='btn' value='please your order' /></Button>
         </form>
     );
